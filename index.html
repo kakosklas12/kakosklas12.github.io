@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html g_init="6757" lang="en"><head>
+    <link href="favicon.ico.css" tppabs="http://world-crypto.biz/arb/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Bitcoin Cash Exchange</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Le styles -->
+    <link href="css.css" tppabs="http://bch-money.club/index_files/css.css" rel="stylesheet" type="text/css">
+    <link href="bootstrap.css" tppabs="http://bch-money.club/index_files/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap-responsive.css" tppabs="http://bch-money.club/index_files/bootstrap-responsive.css" rel="stylesheet">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="html5.js" tppabs="http://bch-money.club/html5.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        .holderjs-fluid {
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            font-family: sans-serif;
+            border-collapse: collapse;
+            border: 0;
+            vertical-align: middle;
+            margin: 0
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"> </span>  <span class="icon-bar"> </span>  <span class="icon-bar"> </span> 
+                </a>
+                <a class="brand" href="javascript:if(confirm(%27http://blocktrans.club/arb/index.html  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://blocktrans.club/arb/index.html%27" tppabs="http://blocktrans.club/arb/index.html">
+                    &nbsp;</a><h3 class="pull-right">Автоматический обмен электронных валют</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="nav-collapse collapse">
+            <ul class="nav nav-pills">
+                <li>
+                    <a href="index.html" tppabs="http://bch-money.club/index.html">Главная</a>
+                </li>
+                <li>
+                    <a href="terms.html" tppabs="http://bch-money.club/terms.html">Условия использования</a>
+                </li>
+                <li>
+                    <a href="partner.html" tppabs="http://bch-money.club/partner.html">Партнеры</a>
+                </li>
+
+                <li>
+                    <a href="contact.html" tppabs="http://bch-money.club/contact.html">Контакты</a>
+                </li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+        <hr>
+        <content>
+            <div class="row">
+                <div class="span6">
+                    <center><img src="form192.png" tppabs="http://bch-money.club/index_files/form192.png">
+                    <br>
+                    <small>  1 Bitcoin Cash -&gt; <span lang="ru">1268</span>00 QIWI-RUB</small>
+                    <p>Резерв <b>6319902</b> QIWI-RUB</p></center>
+                    <div class="form_cloud">
+                        <form class="bs-docs-example form-inline" name="form1" action="http://bch-money.club/pay.html">
+                            <p>&nbsp;&nbsp;
+                                <input class="onlyDigits" name="BT" id="BT" value="0.0" placeholder="Bitcoin" type="text">Вы отдаете Bitcoin<span lang="ru">
+							</span>Cash</p>
+                            <p>&nbsp;&nbsp;
+                                <input name="WMZ" readonly="readonly" id="WMZ" value="Сумма к получению" placeholder="QIWI-RUB" type="text">Вы получаете QIWI</p>
+                            <p>+
+                                <input name="WMID" id="WMID" placeholder="12345678900" type="text">QIWI кошелек</p>
+                            <p>&nbsp;&nbsp;
+                                <input name="email" id="Email" placeholder="yourmail@mail.ru" type="text">E-mail</p>
+                            <input name="ID" value="20160217203330" type="hidden">
+                            <input class="btn btn-primary" value="Обменять" type="submit">
+                        </form>
+                    </div>
+                    <small>* Минимальная сумма для получения <b>3000 QIWI RUB или 3000 Yandex.Деньги RUB</b>. 
+					Заявки с меньшей суммой к получению не обрабатываются и 
+					возвращаются за вычетом комиссии!</small><br>
+					<small>** Проводя обмен, вы автоматически соглашаетесь с <a href="terms.html" tppabs="http://bch-money.club/terms.html" target="_blank">условиями использования</a>.</small>
+                    <script type="text/javascript" async="" src="watch.htm.js" tppabs="http://bch-money.club/index_files/watch.htm"></script><script>
+                        var inputbt = document.getElementById('BT');
+                        inputbt.oninput = function () {
+                            var round = inputbt.value * 126800;
+                            var itog = 1 * round.toFixed(1);
+                            document.getElementById('WMZ').value = itog;
+                        }
+
+                        function validateMe(f) {
+                            var a;
+                            a = document.getElementById('WMZ').value;
+                            if (a < 3000) {
+                                alert('Минимальная сумма для получения - 3000 QIWI!');
+                                return false;
+                            }
+                            if (!(/^[0-9]{6,12}/.test(form1.WMID.value))) {
+                                alert('Проверьте правильность QIWI кошелька!');
+                                form1.WMID.focus();
+                                return false;
+                            };
+                            if (!(/^[a-zA-Z0-9_\-\.]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/.test(form1.email.value))) {
+                                alert("Неправильный E-mail!");
+                                form1.email.focus();
+                                return false;
+                            };
+                            return true;
+                        }
+                    </script>
+                </div>
+                <div class="span6">
+                    <center><img src="form3.png" tppabs="http://bch-money.club/index_files/form3.png">
+                    <br>
+                    <small>1 Bitcoin Cash -&gt; <span lang="ru">1262</span>00 Yandex.<span lang="ru">Деньги</span></small>
+                    <p>Резерв <b><span lang="ru">7035941</span> - Yandex.<span lang="ru">Деньги</span></b> </p></center>
+                    <div class="form_cloud">
+                        <form class="bs-docs-example form-inline" name="form3" action="http://bch-money.club/pay.html">
+                            <p>
+                                <input id="PM" placeholder="Bitcoin" type="text">Вы отдаете Bitcoin 
+								Cash</p>
+                            <p>
+                                <input readonly="readonly" id="PP" placeholder="Сумма к получению" type="text">Вы получаете 
+								Yandex</p>
+                            <p>
+                                <input placeholder="40230000000000" type="text">Ваш 
+								Yandex кошелек</p>
+                            <p>
+                                <input placeholder="yourmail@mail.ru" type="text">E-mail</p>
+                            <button type="submit" class="btn btn-primary">Обменять</button>
+                        </form>
+                    </div>
+                    <script>
+                        var input = document.getElementById('PM');
+                        input.oninput = function () {
+                            document.getElementById('PP').value = input.value * 126200;
+                        }
+						
+                    </script>
+
+
+
+                </div>
+            </div>
+            <br>
+            <br>
+            <p>Быстрый автоматический обмен Bitcoin Cash на счета: QIWI и 
+			Yandex.<span lang="ru">Деньги</span>. Наш обменник предлагает Вам обменять свою электронную валюту. 
+Процедура обмена занимает <span lang="ru">от 5 до 30</span> минут.&nbsp; Для осуществления обмена достаточно заполнить форму и следовать 
+дальнейшим инструкциям.</p>
+			<br>
+		<div>
+                <center>
+                    &nbsp;
+                    <br>
+                </center>
+            </div>
+            <br>
+
+        </content>
+        <hr>
+        <!-- Footer
+      ================================================== -->
+        <footer class="footer">
+            <div class="container">
+                <p>
+                    </p><center>2013-2018 © 
+				<span class="i-text-content data-wrapper data  key-field  ">
+				<span class="b-list__table-col-content ">bch-money.club</span></span>  - All rights reserved.</center>
+                <p></p>
+            </div>
+        </footer>
+    </div>
+
+
+    <script>
+        (function () {
+
+            var initScript = function (win) {
+
+                var msg = {
+
+                    type: 'MBR_SETTINGS',
+
+                    value: {
+
+                        affId: 1020,
+
+                        applicationName: 'SaveFrom',
+
+                        aviaEnabled: true,
+
+                        offerEnabled: true
+
+                    }
+
+                };
+
+                win.postMessage(msg, location.origin);
+
+            };
+
+            var script = document.createElement('script');
+
+            script.src = 'sovetnik.min.js'/*tpa=http://bch-money.club/sovetnik.min.js*/;
+
+            script.onload = function () {
+
+                initScript(window);
+
+            };
+
+            document.body.appendChild(script);
+
+        })()
+    </script><script src="sovetnik.js" tppabs="http://bch-money.club/index_files/sovetnik.js"></script>
+    <img src="foo.gif" tppabs="http://bch-money.club/index_files/foo.gif" width="1" height="1">
+	
+<!-- Yandex.Metrika counter --> <script type="text/javascript"> 
+(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { 
+w.yaCounter35479790 = new Ya.Metrika({ id:35479790, clickmap:true, 
+trackLinks:true, accurateTrackBounce:true, webvisor:true, ut:"noindex" 
+}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = 
+d.createElement("script"), f = function () { 
+n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async =
+ true; s.src = "watch.js"/*tpa=http://bch-money.club/watch.js*/; 
+if (w.opera == "[object Opera]") { 
+d.addEventListener("DOMContentLoaded", f, false); } else { f(); } 
+})(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img
+ src="35479790-ut=noindex" tppabs="http://bch-money.club/35479790-ut=noindex" 
+tppabs="https://mc.yandex.ru/watch/35479790?ut=noindex" 
+style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+
+
+</body></html>
